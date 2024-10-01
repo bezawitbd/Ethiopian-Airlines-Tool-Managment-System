@@ -304,7 +304,7 @@ function displayTools() {
                 delete_btn.parentElement.parentElement.remove();
                 const val = localStorage.getItem("tool" + i.toString() + j.toString());
                 const num = Number(localStorage.getItem('delete'))
-                localStorage.setItem("delete" + num.toString(),name +" "+ "Tools Returned" + ' ' + localStorage.getItem("did" + i.toString() + j.toString())+ " " + localStorage.getItem("day" + i.toString() + j.toString())+' ' + localStorage.getItem("hour" + i.toString() + j.toString()));
+                localStorage.setItem("delete" + num.toString(),name +" "+ "Returned Tools" + ' ' + localStorage.getItem("did" + i.toString() + j.toString())+ " " + localStorage.getItem("day" + i.toString() + j.toString())+' ' + localStorage.getItem("hour" + i.toString() + j.toString()));
                 localStorage.setItem('delete',(num+1).toString())
                 localStorage.removeItem("did" + i.toString() + j.toString());
                 displayTools()
