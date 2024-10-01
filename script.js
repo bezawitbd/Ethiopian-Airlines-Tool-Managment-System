@@ -260,7 +260,7 @@ function displayTools() {
                 delete_btn1.parentElement.parentElement.remove();
                 const val = localStorage.getItem("tool" + i.toString() + j.toString());
                 const num = Number(localStorage.getItem('delete'))
-                localStorage.setItem("delete" + num.toString(),name +" "+ "taken tool" + ' ' + localStorage.getItem("tool" + i.toString() + j.toString())+ " " + localStorage.getItem("day" + i.toString() + j.toString())+' ' + localStorage.getItem("hour" + i.toString() + j.toString()));
+                localStorage.setItem("delete" + num.toString(),name +" "+ "Taken Tool" + ' ' + localStorage.getItem("tool" + i.toString() + j.toString())+ " " + localStorage.getItem("day" + i.toString() + j.toString())+' ' + localStorage.getItem("hour" + i.toString() + j.toString()));
                 localStorage.setItem('delete',(num+1).toString())
                 localStorage.removeItem("tool" + i.toString() + j.toString());
                 displayTools()}
